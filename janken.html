@@ -1,0 +1,31 @@
+<!DOcTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>じゃんけんゲーム</title>
+    <link rel="stylesheet" href="./janken.css">
+    <script src="janken.js" type="text/javascript">
+    </script>
+</head>
+
+<div class="bg_pattern Paper_v2"></div>
+
+<body>
+    <h1>~じゃんけんゲーム~</h1>
+    ルール：じゃんけんの手を選択してOK！
+
+    <hr>
+    <button onclick="init()">ゲーム開始</button>
+    <br>
+    じゃんけんの手を選択してください。
+    <br>
+    <img src="gu.png" width="100" onclick="selectHand(0)">
+    <img src="choki.png" width="100" onclick="selectHand(1)">
+    <img src="pa.png" width="120" onclick="selectHand(2)">
+    <br><br>
+    <button onclick="judge()">OK</button>
+    <hr>
+    <span id="result"></span>
+</body>
+
+</html>
