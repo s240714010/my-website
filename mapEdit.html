@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>mapEdit</title>
+    <script src="mapEdit.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="./mapEdit.css">
+</head>
+
+<div class="bg_pattern Paper_v2"></div>
+
+<body onload="init()">
+    <header>
+        ~mapEditer~
+        <hr><br>
+    </header>
+
+    <table id="board"></table>
+    <h2 id="info"></h2>
+
+    <div class="toolbar">
+        <img src="brick.png" onclick="selectblock(0)">
+        <img src="tile.png" onclick="selectblock(1)">
+        <img src="soilwall.png" onclick="selectblock(2)">
+        <img src="stonewall.png" onclick="selectblock(3)">
+    </div>
+    <hr>
+    <div class="controls">
+    <button onclick="reset()">reset</button>
+    <input type="number" value="8" id="width"> 
+    ×
+    <input type="number" value="8" id="height">
+    </div>
+</body>
+</html>
