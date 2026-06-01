@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>ラックナンバーサーチ</title>
+    <script src="numbersearch.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="./numbersearch.css">
+</head>
+
+<body>
+    <div class="tooltip">
+        <h4>？
+            <span class="tooltiptext">
+                １．startをクリック<br>
+                ２．表示される数字を見て、１～９のうち抜けている数字を選ぶ<br>
+                ３．数字キーで回答<br>
+                ４．10問正解でクリア
+            </span>
+        </h4>
+    </div>
+    <h1>~LackNumberSerch~</h1>
+    <br>
+
+    <div class="main">
+    <button onclick="start()">START</button>
+    <h2>
+        <span id="question1"></span>
+        　
+        <span id="ans1"></span>
+    </h2>
+    <h3>
+        <span id="result"></span>
+        <div id="history"></div>
+    </h3>
+    </div>
+</body>
+</html>
