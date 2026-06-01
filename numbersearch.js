@@ -40,6 +40,7 @@ function myhandler(event) {
                     const endTime = Date.now();
                     const sec = (endTime - startTime) / 1000;
                     document.getElementById("result").innerText =`クリア！ ${sec} 秒`;
+                    document.getElementById("question1").innerText = "";
                     return;
                 }
                 q();
