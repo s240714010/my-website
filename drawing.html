@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>お絵描きキャンバス</title>
+<link rel="stylesheet" href="drawing.css">
+</head>
+
+<body onload="init()">
+
+<div class="toolbar">
+    <div class="palette">
+        <button class="color-btn" data-color="#000000" style="background:#000000;"></button>
+        <button class="color-btn" data-color="#ff0000" style="background:#ff0000;"></button>
+        <button class="color-btn" data-color="#00aa00" style="background:#00aa00;"></button>
+        <button class="color-btn" data-color="#0000ff" style="background:#0000ff;"></button>
+        <button class="color-btn" data-color="#ffff00" style="background:#ffff00;"></button>
+    </div>
+
+
+
+    <div class="tool-row">
+        <span>太さ</span>
+        <input type="range" id="slider" min="1" max="30" value="3">
+        <span id="width-display">3</span>
+    </div>
+    <div class="tool-row">
+        <input type="color" id="color-picker" value="#000000">
+        <button id="eraser-btn">消しゴム</button>
+        <button id="clear-btn">全消し</button>
+    </div>
+
+</div>
+
+<canvas id="canvas" width="320" height="480"></canvas>
+<script src="drawing.js"></script>
+</body>
+</html>
