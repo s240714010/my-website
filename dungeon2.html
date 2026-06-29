@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dungeon</title>
+    <link rel="stylesheet" href="./dungeon.css">
+</head>
+
+<div class="bg_pattern Paper_v2"></div>
+
+<body onload="init()">
+    <p>Dungeon</p>
+    <hr>
+
+    <canvas id="maze" width="900" height="600"></canvas>
+    <script src="dungeon2.js" type="text/javascript"></script>
+    <img id="hero0" src="hero0.png" style="display: none">
+    <img id="hero1" src="hero1.png" style="display: none">
+    <img id="hero2" src="hero2.png" style="display: none">
+    <img id="hero3" src="hero3.png" style="display: none">
+
+    <hr>
+    <div class="controls">
+        <button onclick="reset()">reset</button>
+        <input type="number" value="31" id="width">
+        ×
+        <input type="number" value="31" id="height">
+    </div>
+</body>
+
+</html>
